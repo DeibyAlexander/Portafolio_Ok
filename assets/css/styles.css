@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #000000 !important;
+    font-size: 20px !important;
+    color: white !important;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 13%;
+    background: transparent;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 200;
+
+}
+.navbar a{
+    position: relative;
+    font-size: 20px !important;
+    color: #fff;
+    margin-right: 30px;
+    text-decoration: none;
+    
+}
+.hola{
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.navbar a::after{
+    border-radius: 27px ;
+    background:white ;
+    box-shadow:  7px -7px 15px #523939, -7px 7px 15px #ffe5e5 ;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s ease;
+    
+}
+.navbar a:hover:after{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+
+
+
+
+.sec-01, .sec-02, .sec-03, .sec-05{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* .container .hola{
+    position: relative;
+    height: 100%;
+}
+.hola{
+    height: 100%;
+} */
+
+.container > h1{
+    font-size: 70px;
+}
+.contain{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.image-01, .image-02, .image-03,  .image-05{
+    width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+.image-01 img,.image-02 img, .image-03 img ,.image-05 img{
+    width: 550px;
+    overflow: hidden;
+    border-radius: 10px;
+    filter: contrast(200%);
+}
+
+.image-01 img, .image-05 img{
+    filter: contrast(100%) !important;
+}
+
+.image-03:hover{
+    transition: 0.5s;
+    filter: contrast(200%);
+}
+
+.image-04{
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.image-04 img{
+    width: 1000px;
+    border-radius: 20px;
+    
+}
+.image-04 img:hover ,.image-01 img:hover ,.image-02 img:hover ,.image-03 img:hover ,.image-05 img:hover{
+    transition: 0.7s;
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+   
+}
+
+.text-01, .text-02, .text-03, .text-04, .text-05{
+    z-index: 100;
+}
+
+
+.text-01{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 600px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    
+}
+
+.text-04{
+    position: absolute;
+    right:  20%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    max-width: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.text-02{
+    width: 700px;
+    margin-left: 50px;
+    padding: 20px;
+    box-shadow: 2px 5px 10px 0px rgba(255, 255, 255, 0.562);
+}
+
+
+.text-05, .text-03 {
+    width: 400px;
+    margin-left: 300px;
+}
+
+.text-05 a{
+    color: white;
+    text-decoration: none;
+}
+.text-05 li, .text-03 li{
+    list-style: none;
+    font-size: 26px;
+}
+.text-05 li:not(:last-child), .text-03 li:not(:last-child){
+    margin-bottom: 50px;
+}
+
