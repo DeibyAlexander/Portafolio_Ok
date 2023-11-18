@@ -10,13 +10,20 @@
 </head>
 <body>
     <header class="header">
-        <nav class="navbar">
+        <nav class="navbar" id="main-navbar">
             <a class="" href="#home">Home</a>
             <a class="" href="#aboutme">About me</a>
               <a class="" href="#skills">Skills</a>
               <a class="" href="#projects">Projects</a>
               <a class="" href="#contacts">Contacts</a>
         </nav>
+
+        <nav class="menu-hamburguesa">
+            <i class="fas fa-bars menu-icon" id="menu-icon" >
+               
+            </i>
+        </nav>
+        
     </header>
 
     <section class="sec-01" id="home">
@@ -47,9 +54,10 @@
                     
                     <p>Hola, Soy Deiby, un backend developer apasionado por seguir adentrandome en el mundo de la tecnologia. Mi enfoque se centra en la creacion de soluciones escalables y eficientes que impulsan aplicaciones web de alto rendimiento.
 
-                        Actualmente termine mi formacion como backend developer en donde adquiri doversas habilidades y conocimiento no solo como lenguajes, frameworks o librerias, si no tambientuve la oprtunida dde pulir mis habilidades blandas.
+                        </p>
+                        <p class="text-02-1">Actualmente termine mi formacion como backend developer en donde adquiri doversas habilidades y conocimiento no solo como lenguajes, frameworks o librerias, si no tambientuve la oprtunida dde pulir mis habilidades blandas.
                         
-                        Estoy emocionado por crecer profesionalmente y colaborar en proyectos innovadores. No dudes en contactarme.</p>
+                            Estoy emocionado por crecer profesionalmente y colaborar en proyectos innovadores. No dudes en contactarme.</p>
                 </div>
 
             </div>
@@ -94,8 +102,7 @@
                     <div class="text-04">
                         <h2>Application Task Manager</h2>
                         <h3>FullStack</h3>
-                        <p>TaskManager es una aplicación web Fullstack desarrollada como proyecto personal. Permite a los usuarios gestionar sus tareas diarias con Node.js, MongoDB y React.
-                        TaskManager busca proporcionar a los usuarios una plataforma eficiente para administrar sus tareas. Aborda aspectos clave de autenticación, almacenamiento de datos y una experiencia de usuario fluida.</p>
+                        <p>TaskManager es una aplicación web Fullstack desarrollada como proyecto personal. Permite a los usuarios gestionar sus tareas diarias con Node.js, MongoDB y React.</p>
                     </div>
                 </div>
                 
@@ -112,7 +119,7 @@
                     <div class="text-04">
                         <h2>Rutas Campus</h2>
                         <h3>Backend</h3>
-                        <p>El objetivo es desarrollar una estructura de carpetas y archivos que siga las mejores prácticas, incluyendo funciones centralizadas en carpetas como "helpers" y "middlewares". Además, se requiere automatizar las consultas acerca del "level" de cada camper dentro de la ruta a la que pertenece en cada centro de entrenamiento del mundo</p>
+                        <p>El objetivo es desarrollar una estructura de carpetas y archivos que siga las mejores prácticas, incluyendo funciones centralizadas en carpetas como "helpers" y "middlewares".</p>
                     </div>
                 </div>
                 
@@ -129,7 +136,7 @@
                     <div class="text-04">
                         <h2>Parkease</h2>
                         <h3>FullStack</h3>
-                        <p>ParkEase es un sistema administrativo de gestión de estacionamiento diseñado para hacer que la administración de estacionamientos sea más eficiente y conveniente tanto para los propietarios de estacionamientos como para los conductores. El sistema abarca desde la reserva de espacios hasta el registro de entradas y salidas de vehículos, la facturación y la generación de informes.</p>
+                        <p>ParkEase es un sistema administrativo de gestión de estacionamiento diseñado para hacer que la administración de estacionamientos sea más eficiente y conveniente tanto para los propietarios de estacionamientos como para los conductores.</p>
                     </div>
                 </div>
                 
@@ -157,5 +164,19 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuIcon = document.getElementById('menu-icon');
+            const mainNavbar = document.getElementById('main-navbar');
+    
+            menuIcon.addEventListener('click', function () {
+                mainNavbar.classList.toggle('show');
+                menuIcon.classList.toggle('show');
+            });
+        });
+    </script>
+    
+    
 </body>
 </html>

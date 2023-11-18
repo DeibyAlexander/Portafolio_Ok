@@ -60,6 +60,15 @@ body{
     opacity: 1;
 }
 
+.menu-hamburguesa {
+    display: none;
+}
+
+.menu-hamburguesa a {
+    display: none;
+}
+
+
 
 
 
@@ -95,7 +104,8 @@ body{
 .contain{
     display: flex;
     flex-direction: row;
-
+    flex-wrap: wrap;
+    gap: 20PX;
     justify-content: center;
     align-items: center;
 }
@@ -192,3 +202,183 @@ body{
     margin-bottom: 50px;
 }
 
+
+
+@media (max-width: 770px) {
+
+
+    .navbar{
+        position: absolute;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .navbar a{
+        position: relative;
+        font-size: 20px !important;
+        color: #fff;
+        margin-right: 30px;
+        text-decoration: none;
+        display: none;
+    }
+    
+  .menu-hamburguesa{
+       
+        display: flex;
+        
+    }
+
+
+    .navbar.show a {
+        display: block;
+        color: #fff; /* Puedes ajustar el color según tu diseño */
+        text-decoration: none;
+        margin: 10px 0;
+        font-size: 18px; /* Puedes ajustar el tamaño de la fuente según tu diseño */
+        
+    }    
+    .navbar.show{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-icon{
+        position: absolute;
+        display: flex;
+        top: 100%;
+
+    }
+    .menu-icon.show{
+        position: absolute;
+        display: flex;
+        top: 30%;
+       
+    }
+
+    
+
+    .menu-hamburguesa i{
+        cursor: pointer;
+        font-size: 50px;
+    }
+
+   
+
+
+
+    .container > h1{
+        font-size: 40px;
+    }
+
+
+    .image-01, .image-02, .image-03,  .image-05{
+        width: 340px;
+        overflow: hidden;
+        border-radius: 10px;
+        
+    }
+
+    .image-01 img,.image-02 img, .image-03 img ,.image-05 img{
+        width: 350px;
+        overflow: hidden;
+        border-radius: 10px;
+        filter: contrast(200%);
+    }
+
+    .image-02, .image-03{
+        display: none;
+    }
+
+
+    .image-04{
+        width: 400px;
+        height: 400px;
+        display: none;
+    }
+
+    .text-02-1{
+        display: none;
+    }
+
+    .text-02{
+        width: 400px;
+    }
+
+    .text-03, .text-05{
+        width: 200px;
+        margin: 0;
+    }
+
+    .text-03 li{
+        font-size: 20px;
+    }
+
+    .text-04{
+        
+      position: relative;
+      right: 0;
+      width: 400px;
+    }
+  }
+
+
+
+@media (max-width: 1440px) {
+ 
+    .container > h1{
+        font-size: 40px;
+    }
+
+
+    .image-01, .image-02, .image-03,  .image-05{
+        width: 340px;
+        overflow: hidden;
+        border-radius: 10px;
+        
+    }
+
+    .image-01 img,.image-02 img, .image-03 img ,.image-05 img{
+        width: 350px;
+        overflow: hidden;
+        border-radius: 10px;
+        filter: contrast(200%);
+    }
+
+    .image-02, .image-03{
+        display: none;
+    }
+
+
+    .image-04{
+        width: 400px;
+        height: 400px;
+        display: none;
+    }
+
+    .text-02-1{
+        display: none;
+    }
+
+    .text-02{
+        width: 400px;
+    }
+
+    .text-03, .text-05{
+        width: 200px;
+        margin: 0;
+    }
+
+    .text-03 li{
+        font-size: 20px;
+    }
+
+    .text-04{
+        
+      position: relative;
+      right: 0;
+      width: 400px;
+    }
+  }
